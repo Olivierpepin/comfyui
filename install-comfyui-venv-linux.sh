@@ -24,7 +24,7 @@ python -m venv venv
 source venv/bin/activate
 
 echo "📦 Installation de Torch (GPU)..."
-TMPDIR="$TMP_DIR" python -m pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu128
+TMPDIR="$TMP_DIR" python -m pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cu128
 
 echo "📦 Installation des dépendances principales..."
 TMPDIR="$TMP_DIR" python -m pip install -r requirements.txt
